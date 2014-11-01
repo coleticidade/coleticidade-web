@@ -55,13 +55,16 @@
                         <button class="btn btn-facebook"> <i class="fa fa-facebook"></i> &nbsp; Entrar pelo Facebook </button>
                         <hr>
                         <div class="form-group has-feedback has-feedback-left">
-                          <label class="control-label sr-only">Username</label>
+                          <label class="control-label sr-only">Email</label>
                           <input  id="email" type="text" class="form-control login form-email" placeholder="Digite o email" />
                           <i class="form-control-feedback fa fa-envelope"></i> </div>
-                        <div class="form-group has-feedback has-feedback-left">
-                          <label class="control-label sr-only">Username</label>
+                        <div class="form-group has-feedback has-feedback-left has-error">
+                          <label class="control-label sr-only">Senha</label>
                           <input id="password" type="password" class="form-control login" placeholder="Digite sua senha" />
-                          <i class="form-control-feedback fa fa-lock"></i> </div>
+                          <i class="form-control-feedback fa fa-lock"></i> 
+                          
+                          </div>
+                         
                       </div>
                       <div>
                       <span class="text-gray">
@@ -90,8 +93,7 @@
   </div>
   <!-- .row --> 
 </div>
-<!--.container-->
-
+<!--.container--> 
 
 <!-------------------------------------------  BANNER -------------------------------------------->
 <div class="container-fluid">
@@ -111,17 +113,14 @@
               <h1> <span class="text-light">PARK AT</span> <br>
                 <span class="text-bold">ALAMEDA LORENA</span> </h1>
               <span class="not-show-mobile">Donec sod odio dui. Morbi loo risus. parta ac consecterur ac. vesﬁbulurn at ems. Fusce dapibus. toms ac cursus commodo. tortor mauris condbnentum nbh. ut fermentum massa justo sit amer risus. Cum sociis natoque penaﬁbus at magnis dis parrunbnt montes. nascerur ridicums mus. Sad posuere consectetur est at Iobortis. Aenean eu loo quam.tortor mauris condbnentum nbh. ut fermentum massa justo sit amer risus. Cum sociis natoque penaﬁbus at magnis dis parrunbnt montes. nascerur ridicums mus. </span>
-              <div class="count-project-box">
+              <div class="count-project-box not-show-mobile" >
                 <div class="count-project row ">
-                  
-                      <ul class="graphs stats-container centered biggie">
-                        <li class="animated" data-provide="circular" data-fill-color="#33cc99" data-percent="true" data-initial-value="45" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
-                      </ul>
-                      <div class="picture"> 
-                        <!-- Imagem do usuário em destaque --> 
-                        <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
-                      </div>
-                 
+                  <ul class="graphs stats-container centered biggie">
+                    <li class="animated" data-provide="circular" data-fill-color="#33cc99" data-percent="true" data-initial-value="45" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+                  </ul>
+                  <div class="picture"> 
+                    <!-- Imagem do usuário em destaque --> 
+                    <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> </div>
                   <div class="count-text">
                     <div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2 col-xs-3 col-xs-offset-2"> <span> 12 </span>
                       <div> dias para acabar</div>
@@ -137,10 +136,17 @@
                 </div>
                 <!-- count-project row --> 
                 
-              </div> <!-- count-project-box -->  
-            </div> <!-- carousel-caption container --> 
-          </div> <!-- item active --> 
-          
+              </div>
+              <!-- count-project-box -->
+              
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn-back-box-sm">
+                <button class="btn btn-blue" data-toggle="modal" data-target="#apoie-projeto"> APOIE 
+                ESTE PROJETO </button>
+              </div>
+            </div>
+            <!-- carousel-caption container --> 
+          </div>
+          <!-- item active --> 
           
           <!---------------------------------------------------------------------->
           
@@ -149,17 +155,14 @@
               <h1> <span class="text-light">PARK AT</span> <br>
                 <span class="text-bold">ALAMEDA LORENA</span> </h1>
               <span class="not-show-mobile">Donec sod odio dui. Morbi loo risus. parta ac consecterur ac. vesﬁbulurn at ems. Fusce dapibus. toms ac cursus commodo. tortor mauris condbnentum nbh. ut fermentum massa justo sit amer risus. Cum sociis natoque penaﬁbus at magnis dis parrunbnt montes. nascerur ridicums mus. Sad posuere consectetur est at Iobortis. Aenean eu loo quam.tortor mauris condbnentum nbh. ut fermentum massa justo sit amer risus. Cum sociis natoque penaﬁbus at magnis dis parrunbnt montes. nascerur ridicums mus. </span>
-              <div class="count-project-box">
+              <div class="count-project-box not-show-mobile">
                 <div class="count-project row ">
-                  
-                      <ul class="graphs stats-container centered biggie">
-                        <li class="animated" data-provide="circular" data-fill-color="#33cc99" data-percent="true" data-initial-value="45" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
-                      </ul>
-                      <div class="picture"> 
-                        <!-- Imagem do usuário em destaque --> 
-                        <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
-                      </div>
-                 
+                  <ul class="graphs stats-container centered biggie">
+                    <li class="animated" data-provide="circular" data-fill-color="#33cc99" data-percent="true" data-initial-value="45" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+                  </ul>
+                  <div class="picture"> 
+                    <!-- Imagem do usuário em destaque --> 
+                    <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> </div>
                   <div class="count-text">
                     <div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2 col-xs-3 col-xs-offset-2"> <span> 12 </span>
                       <div> dias para acabar</div>
@@ -175,23 +178,191 @@
                 </div>
                 <!-- count-project row --> 
                 
-              </div> <!-- count-project-box -->  
-            </div> <!-- carousel-caption container --> 
-          </div> <!-- item  --> 
+              </div>
+              <!-- count-project-box -->
+              
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn-back-box-sm">
+                <button class="btn btn-blue" data-toggle="modal" data-target="#apoie-projeto-2"> APOIE
+                ESTE PROJETO </button>
+              </div>
+            </div>
+            <!-- carousel-caption container --> 
+          </div>
+          <!-- item  --> 
           
-           <!---------------------------------------------------------------------->
-        </div> <!-- carousel-inner --> 
+          <!----------------------------------------------------------------------> 
+        </div>
+        <!-- carousel-inner --> 
         
         <!-- Controls --> 
-        <a class="left carousel-control" href="#carousel-banner" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> 
-        <a class="right carousel-control" href="#carousel-banner" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
+        <a class="left carousel-control" href="#carousel-banner" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#carousel-banner" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
     </div>
   </div>
 </div>
 
+<!-- Inicio da modal -->
+
+<div class="modal fade" id="apoie-projeto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cancel</span></button>
+        <h4 class="modal-title">Você está prestes a fazer parte do grupo que
+          está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontecer. <br>
+          <small> Selecione sua recompensa :) </small></h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 rewards-project-box title-project-box"> 
+            
+            <!-- Modulo 001 -->
+            <div class="row reward-modules">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
+                  <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
+                  <span class="text-bold">THIS REWARD</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- row Modulo 001 --> 
+            
+            <!-- Modulo 002 -->
+            <div class="row reward-modules">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
+                  <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
+                  <span class="text-bold">THIS REWARD</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- row Modulo 002 --> 
+            
+            <!-- Modulo 003 -->
+            <div class="row reward-modules">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
+                  <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
+                  <span class="text-bold">THIS REWARD</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- row Modulo 003 --> 
+            
+          </div>
+          <!--col-lg-12 col-md-12 col-sm-12 col-xs-12 REWARDS --> 
+          
+        </div>
+        <!-- row --> 
+      </div>
+      <!-- FOOTER
+                <div class="modal-footer">
+                  <button type="button" class="btn pull-right btn-success">Salvar</button>
+                  <a class="pull-right" data-dismiss="modal">Cancelar</a> </div> --> 
+    </div>
+  </div>
+</div>
+<!-- modal fade FIM MODAL --> 
+
+<!-- Inicio da modal 2-->
+
+<div class="modal fade" id="apoie-projeto-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cancel</span></button>
+        <h4 class="modal-title">Você está prestes a fazer parte do grupo que
+          está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontecer. <br>
+          <small> Selecione sua recompensa :P </small></h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 rewards-project-box title-project-box"> 
+            
+            <!-- Modulo 001 -->
+            <div class="row reward-modules">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
+                  <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
+                  <span class="text-bold">THIS REWARD</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- row Modulo 001 --> 
+            
+            <!-- Modulo 002 -->
+            <div class="row reward-modules">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
+                  <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
+                  <span class="text-bold">THIS REWARD</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- row Modulo 002 --> 
+            
+            <!-- Modulo 003 -->
+            <div class="row reward-modules">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
+                  <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
+                  <span class="text-bold">THIS REWARD</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- row Modulo 003 --> 
+            
+          </div>
+          <!--col-lg-12 col-md-12 col-sm-12 col-xs-12 REWARDS --> 
+          
+        </div>
+        <!-- row --> 
+      </div>
+      <!-- FOOTER
+                <div class="modal-footer">
+                  <button type="button" class="btn pull-right btn-success">Salvar</button>
+                  <a class="pull-right" data-dismiss="modal">Cancelar</a> </div> --> 
+    </div>
+  </div>
+</div>
+<!-- modal fade FIM MODAL --> 
 
 <!-------------------------------------------  FAIXA DESKTOP -------------------------------------------->
-
 
 <div id="plus-events" class="container-fluid gray-background top-align">
   <div class="container">
@@ -221,7 +392,7 @@
   </div>
   <!-- .container --> 
 </div>
-<!-- .container-fluid -->
+<!-- .container-fluid --> 
 
 <!-------------------------------------------  FAIXA MOBILE -------------------------------------------->
 
@@ -233,50 +404,49 @@
           with the purpose to promote changes in cities. </h3>
       </div>
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top-20">
-        <div id="carousel-mobile" class="carousel slide" data-ride="carousel">
+        <div id="carousel-mobile" class="carousel slide" data-ride="carousel"> 
           <!-- Indicators -->
           <ol class="carousel-indicators mobile-indicator">
             <li data-target="#carousel-mobile" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-mobile" data-slide-to="1"></li>
             <li data-target="#carousel-mobile" data-slide-to="2"></li>
           </ol>
-        
+          
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
-          
-            <div class="item active mobile-carousel-box">
-             <img src="assets/image/icon-amazing-ideias.png">
+            <div class="item active mobile-carousel-box"> <img src="assets/image/icon-amazing-ideias.png">
               <div class="carousel-caption carousel-text-mobile">
-               <h4 class="margin-top-20"> IDEIAS INCRÍVEIS </h4>
-               <p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
+                <h4 class="margin-top-20"> IDEIAS INCRÍVEIS </h4>
+                <p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
               </div>
-            </div> <!-- item -->
+            </div>
+            <!-- item -->
             
-            <div class="item mobile-carousel-box">
-               <img src="assets/image/icon-community.png">
+            <div class="item mobile-carousel-box"> <img src="assets/image/icon-community.png">
               <div class="carousel-caption carousel-text-mobile">
                 <h4 class="margin-top-20"> COMUNIDADE</h4>
-         		<p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
+                <p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
               </div>
-            </div> <!-- item -->
+            </div>
+            <!-- item -->
             
-            <div class="item mobile-carousel-box">
-               <img src="assets/image/icon-public-power.png">
+            <div class="item mobile-carousel-box"> <img src="assets/image/icon-public-power.png">
               <div class="carousel-caption carousel-text-mobile">
                 <h4 class="margin-top-20"> PODER PÚBLICO </h4>
                 <p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
               </div>
-            </div> <!-- item -->
+            </div>
+            <!-- item --> 
             
           </div>
-        
+          
           <!-- Controls 
           <a class="left carousel-control" href="#carousel-mobile" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
           <a class="right carousel-control" href="#carousel-mobile" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>-->
+          </a>--> 
         </div>
       </div>
     </div>
@@ -284,11 +454,9 @@
   </div>
   <!-- .container --> 
 </div>
-<!-- .container-fluid -->
-
+<!-- .container-fluid --> 
 
 <!-------------------------------------------  PROJETOS -------------------------------------------->
-
 
 <div class="container">
   <div class="row">
@@ -296,8 +464,8 @@
       <h3>Popular at Coleticidade </h3>
     </div>
     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-    
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  margin-top-20 popular-container remove-pr">
+      <a href="#">
         <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
           <h5 class="text-bold">01 PARK AT ALAMEDA LORENA <br>
             <span class="text-light">por Erin Bagwell </span> </h5>
@@ -308,13 +476,10 @@
             <ul class="graphs stats-container-mini centered biggie not-show-mobile">
               <li class="animated" data-provide="circular" data-fill-color="#33cc99" data-percent="true" data-initial-value="82" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
             </ul>
-             <div class="picture not-show-mobile"> 
-                <!-- Imagem do usuário em destaque --> 
-                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
-             </div>
-                
-            <div class="count-project count-mini">
-             
+            <div class="picture not-show-mobile"> 
+              <!-- Imagem do usuário em destaque --> 
+              <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> </div>
+            <div class="count-mini-box">
               <div class="row cont-text">
                 <div class="remove-plr col-lg-12">
                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
@@ -337,11 +502,12 @@
           
         </div>
         <!--  gray-border  --> 
-        
+        </a>
       </div>
-      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
       
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <a href="#">
         <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
           <h5 class="text-bold">02 PARK AT ALAMEDA LORENA <br>
             <span class="text-light">por Erin Bagwell </span> </h5>
@@ -352,22 +518,19 @@
             <ul class="graphs stats-container-mini centered biggie not-show-mobile">
               <li class="animated" data-provide="circular" data-fill-color="#f2d032" data-percent="true" data-initial-value="77" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
             </ul>
-             <div class="picture not-show-mobile"> 
-                <!-- Imagem do usuário em destaque --> 
-                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
-             </div>
-                
-            <div class="count-project count-mini">
-             
+            <div class="picture not-show-mobile"> 
+              <!-- Imagem do usuário em destaque --> 
+              <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> </div>
+            <div class="count-mini-box">
               <div class="row cont-text">
                 <div class="remove-plr col-lg-12">
                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
                     <div> dias para acabar</div>
                   </div>
-                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
                     <div> apoiadores</div>
                   </div>
-                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
                     <div> arrecadados</div>
                   </div>
                 </div>
@@ -381,11 +544,12 @@
           
         </div>
         <!--  gray-border  --> 
-        
+        </a>
       </div>
-      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
       
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+       <a href="#">
         <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
           <h5 class="text-bold">03 PARK AT ALAMEDA LORENA <br>
             <span class="text-light">por Erin Bagwell </span> </h5>
@@ -396,22 +560,19 @@
             <ul class="graphs stats-container-mini centered biggie not-show-mobile">
               <li class="animated" data-provide="circular" data-fill-color="#3399cc" data-percent="true" data-initial-value="36" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
             </ul>
-             <div class="picture not-show-mobile"> 
-                <!-- Imagem do usuário em destaque --> 
-                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
-             </div>
-                
-            <div class="count-project count-mini">
-             
+            <div class="picture not-show-mobile"> 
+              <!-- Imagem do usuário em destaque --> 
+              <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> </div>
+            <div class="count-mini-box">
               <div class="row cont-text">
                 <div class="remove-plr col-lg-12">
                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
                     <div> dias para acabar</div>
                   </div>
-                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
                     <div> apoiadores</div>
                   </div>
-                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
                     <div> arrecadados</div>
                   </div>
                 </div>
@@ -425,12 +586,12 @@
           
         </div>
         <!--  gray-border  --> 
-        
+        </a>
       </div>
-      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
-      
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
       
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <a href="#">
         <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
           <h5 class="text-bold">04 PARK AT ALAMEDA LORENA <br>
             <span class="text-light">por Erin Bagwell </span> </h5>
@@ -441,22 +602,19 @@
             <ul class="graphs stats-container-mini centered biggie not-show-mobile">
               <li class="animated" data-provide="circular"  data-fillStyle="#ffffff" data-fill-color="#f06241" data-percent="true" data-initial-value="96" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
             </ul>
-             <div class="picture not-show-mobile"> 
-                <!-- Imagem do usuário em destaque --> 
-                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
-             </div>
-                
-            <div class="count-project count-mini">
-             
+            <div class="picture not-show-mobile"> 
+              <!-- Imagem do usuário em destaque --> 
+              <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> </div>
+            <div class="count-mini-box">
               <div class="row cont-text">
                 <div class="remove-plr col-lg-12">
-                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
                     <div> dias para acabar</div>
                   </div>
-                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
                     <div> apoiadores</div>
                   </div>
-                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
                     <div> arrecadados</div>
                   </div>
                 </div>
@@ -470,38 +628,39 @@
           
         </div>
         <!--  gray-border  --> 
-        
+        </a>
       </div>
       <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
       
     </div>
     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center margin-top-20"> <br>
       <hr>
-      <a href="#"> <span class="badge-veja-mais badge badge-info ">VEJA MAIS</span> </a> </div>
+      <a class="loading badge-veja-mais badge badge-info" data-loading-text="CARREGANDO...">VEJA MAIS </a> </div>
+ 
+    
+</div>
+
   </div>
   <!-- .row --> 
 </div>
-<!-- .container -->
+<!-- .container --> 
 
 <!-------------------------------------------  MAPA -------------------------------------------->
 
 <div class="container-fluid remove-plr position-relative">
-  <div id="map">
-   
-  </div>
-  <div class="map-layer">
-  	<a href="#"><i class="fa fa-times-circle-o fa-2x pull-right"></i></a>
-  	
-    <p class="text-light"> TOGETHER.<br>
-    <span class="text-bold">WE TRANSFORM</span><br>
-    MORE THAN<br>
-    20 SPACES!</p>
-  
-  </div> <!-- map-layer -->
-  <div class="map-line">
-    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
-      <h3 class="text-white">Have a Community Project in Need of Funding? </h3>
-
+<div id="close-div">
+    <div id="map"> </div>
+    <div class="map-layer"> <a id="link-close"><i class="fa fa-times-circle-o fa-2x pull-right"></i></a>
+      <p class="text-light"> TOGETHER.<br>
+        <span class="text-bold">WE TRANSFORM</span><br>
+        MORE THAN<br>
+        20 SPACES!</p>
+    </div>
+</div>
+<!-- map-layer -->
+<div class="map-line">
+  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
+    <h3 class="text-white">Have a Community Project in Need of Funding? </h3>
     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center margin-top-20"> <a href="mailto:thoy.nozaki@gmail.com?Subject=Mensagem%20Coleticidade" target="_top"> <span class="badge-envie-nos badge badge-success ">ENVIE PARA NÓS</span> </a> </div>
   </div>
   <!-- .map-banner--> 
@@ -554,7 +713,7 @@
           <ul class="menu-footer">
             <li> <span class="text-bold">TOGETHER</span>, we CAN </li>
             <li> TRANSFORM <span class="text-bold">PUBLIC SPACES </span></li>
-            <li><span class="email"> nos@coleticidade.org </span> </li>
+            <li><a id="email" href="mailto:nos@coleticidade.org?subject=Coleticidade">nos@coleticidade.org</a> </li>
           </ul>
           <div class="redes-sociais-box">
             <div class="redes-sociais"> <a href="#"> <img src="assets/image/icon-facebook.png"> </a></div>
@@ -567,13 +726,11 @@
       </div>
       <!-- footer-line --> 
     </div>
-    <!-- container -->
+    <!-- container --> 
     
-<!-------------------------------------------  RODAPÉ -------------------------------------------->
+    <!-------------------------------------------  RODAPÉ -------------------------------------------->
     
-    <div class="all-right-reserved-line">
-      <span class="text-gray">© 2014 Coleticidade. All rights reserved.</span>
-    </div>
+    <div class="all-right-reserved-line"> <span class="text-gray">© 2014 Coleticidade. All rights reserved.</span> </div>
     <!-- all-rightsadasd-reserved-line --> 
   </div>
   <!-- .container-fluid--> 
@@ -589,8 +746,6 @@
 <script type="text/javascript">
 
 $('.banner-select').multiselect();
-
-
 
 $('#progressbar').progressbar({
     warningMarker: 60,

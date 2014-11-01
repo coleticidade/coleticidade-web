@@ -601,7 +601,7 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
                   <div class="progress">
                     <div class="progress-bar progress-bar-step-1" role="progressbar" 
                               aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-                              style="width: 25%;"> <span class="sr-only">40% Complete</span> </div>
+                              style="width: 35%;"> <span class="sr-only">40% Complete</span> </div>
                     <div class="progress-bar progress-bar-step-2" role="progressbar" 
                               aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
                               style="width: 30%;"> <span class="sr-only">30% Complete (info)</span> </div>
@@ -673,7 +673,7 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
             
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
               <hr>
-              <a href="#"> <span class="badge-veja-mais badge badge-info ">VEJA MAIS</span> </a> </div>
+              <a class="loading badge-veja-mais badge badge-info" data-loading-text="CARREGANDO...">VEJA MAIS </a> </div>
           </div>
           
           <!-- #news --> 
@@ -808,21 +808,31 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
   </div>
   <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center margin-top-20">
     <hr>
-    <a href="#"> <span class="badge-veja-mais badge badge-info ">VEJA MAIS</span> </a> </div>
+     <a class="loading badge-veja-mais badge badge-info" data-loading-text="CARREGANDO...">VEJA MAIS </a> </div>
+    
+  
+   
 </div>
 <!-- project-backers-box--> 
 
 <!-------------------------------------------  MAPA -------------------------------------------->
 
+  
 <div class="container-fluid remove-plr position-relative margin-top-20 project-map-box">
-  <h3 class="text-center"> Localização e Projetos Próximos </h3>
-  <div id="map"> </div>
-  <div class="map-layer-project"> <a href="#"><i class="fa fa-times-circle-o fa-2x pull-right"></i></a>
-    <p class="text-light"> TOGETHER.<br>
-      <span class="text-bold">WE TRANSFORM</span><br>
-      MORE THAN<br>
-      20 SPACES!</p>
-  </div>
+
+    <div id="close-div">
+		 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+     <h3 class="text-center"> Localização e Projetos Próximos </h3>
+   </div>
+   
+        <div id="map"> </div>
+        <div class="map-layer"> <a id="link-close"><i class="fa fa-times-circle-o fa-2x pull-right"></i></a>
+          <p class="text-light"> TOGETHER.<br>
+            <span class="text-bold">WE TRANSFORM</span><br>
+            MORE THAN<br>
+            20 SPACES!</p>
+        </div>
+    </div>
   <!-- map-layer --> 
 </div>
 
@@ -978,7 +988,7 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
           <ul class="menu-footer">
             <li> <span class="text-bold">TOGETHER</span>, we CAN </li>
             <li> TRANSFORM <span class="text-bold">PUBLIC SPACES </span></li>
-            <li><span class="email"> nos@coleticidade.org </span> </li>
+           <li><a id="email" href="mailto:nos@coleticidade.org?subject=Coleticidade">nos@coleticidade.org</a> </li>
           </ul>
           <div class="redes-sociais-box">
             <div class="redes-sociais"> <a href="#"> <img src="assets/image/icon-facebook.png"> </a></div>

@@ -2,7 +2,7 @@
 
  $("body").tooltip({ selector: '[data-toggle=tooltip]' });
  
-
+	
 
 // Botão dropdown //
 	$('button[data-toggle=popover]').popover({ 
@@ -19,7 +19,15 @@
 	$(this).parent().find(".fa-chevron-down").removeClass("fa-chevron-down").addClass("fa-chevron-up");
 	});
 	
+// Fechar Div
+	$('#link-close').click(function(){
+       $("#close-div").toggleClass('hide');
+
+	});
+
+
 // Seguir este projeto	
+
 	$('.follow-project').click(function(){
        $(this).toggleClass('active');
 	   
@@ -31,6 +39,8 @@
 	   };
 	   
 	});
+
+//Mudar texto do Seguir	
 				
 				
 	$(".swap-text").on("click", function() {
@@ -43,14 +53,11 @@
 	  }
 	});
 	
-	$('.banner-select').multiselect();
 
-$('#progressbar').progressbar({
-    warningMarker: 60,
-    dangerMarker: 80,
-    maximum: 100,
-    step: 5
+// Loading
+
+$('.loading').click(function(){
+    var btn = $(this); 
+    btn.button('loading');
 });
-
-
-
+			

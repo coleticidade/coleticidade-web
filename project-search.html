@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COLETICIDADE - PROJECT SEARCH</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!-- Bootstrap -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/css/coleticidade-style.css" rel="stylesheet" media="screen">
+<!-- MAPS -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid"> 
+          <!-- Menu mobile -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="#"><img src="assets/image/logo-coleticidade.png"></a> </div>
+          
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul id="nav-header" class="nav navbar-nav">
+              <li><a href="#">
+                <p>COLETICIDADE </p>
+                <span>o que é coleticidade?</span></a></li>
+              <li class="divider-vertical not-show-mobile"></li>
+              <li><a href="#">
+                <p>PROJECTS</p>
+                <span> ideias incríveis</span></a></li>
+              <li class="divider-vertical not-show-mobile"></li>
+              <li><a href="#">
+                <p>START</p>
+                <span> mande seu projeto</span></a></li>
+              <li class="divider-vertical not-show-mobile"></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="align-navbar-right" href="#"><i class="fa fa-search"> </i></a></li>
+              <li class="divider-vertical"></li>
+              <li>
+                <div class="dropdown"> <a class="remove-pr align-navbar-right log-in" data-toggle="dropdown"><span class="text-info">LOG IN</span> OR</a>
+                  <div class="dropdown-menu popover fade top in dropdown-login">
+                    <div class="arrow"></div>
+                    <div class="reverse"></div>
+                    <div class="box-reverse left"></div>
+                    <div class="box-reverse right"></div>
+                    <form action="" role="form">
+                      <div class="form-group">
+                        <h3> Sign In </h3>
+                        <button class="btn btn-facebook"> <i class="fa fa-facebook"></i> &nbsp; Entrar pelo Facebook </button>
+                        <hr>
+                        <div class="form-group has-feedback has-feedback-left">
+                          <label class="control-label sr-only">Username</label>
+                          <input  id="email" type="text" class="form-control login form-email" placeholder="Digite o email" />
+                          <i class="form-control-feedback fa fa-envelope"></i> </div>
+                        <div class="form-group has-feedback has-feedback-left">
+                          <label class="control-label sr-only">Username</label>
+                          <input id="password" type="password" class="form-control login" placeholder="Digite sua senha" />
+                          <i class="form-control-feedback fa fa-lock"></i> </div>
+                      </div>
+                      <div>
+                      <span class="text-gray">
+                      <input type="checkbox">
+                      Lembre de mim! </span>
+                      <button type="submit" class="btn btn-success btn-sigin pull-right">SIGN ME IN!</button>
+                      <br>
+                      <br>
+                      <hr>
+                      <a class="link" href="#">Esqueceu a senha?</a> <br>
+                      <span class="text-gray"> Novo na Coleticidade? </span> <a class="link" href="#">Registre-se</a>
+                    </form>
+                  </div>
+                </div>
+              </li>
+              <li><a class="remove-pl" href="#"> &nbsp; <span id="join" class="badge badge-info">JOIN</span> </a></li>
+              <li> </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse --> 
+        </div>
+        <!-- /.container-fluid --> 
+      </nav>
+    </div>
+    <!-- col-12--> 
+  </div>
+  <!-- .row --> 
+</div>
+<!--.container--> 
+
+<!-------------------------------------------  IMAGE BACKGROUND -------------------------------------------->
+
+<div class="container-fluid remove-plr position-relative top-align">
+  <div class="background-image-full-mini"> <img src="assets/image/project-search/banner-search-project.jpg"> </div>
+  <!-- background-image-full --> 
+</div>
+<!-- container-fluid --> 
+
+<!-------------------------------------------  PROJECT SEARCH DROPDOWN-------------------------------------------->
+
+<div class="container">
+  	<div class="row">
+    	
+        
+        <div id="search-project-banner" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+         	 
+             <p>Projetos</p>
+           <span class="line"> &nbsp; </span>
+             <!-- 1 LINHA -->
+        	 <span class="clearfix">QUERO VER PROJETOS SOBRE </span>
+        	 <!-- 2 LINHA -->
+             <select class="banner-select" multiple="multiple">
+                            <option value="parklets" selected>PARKLETS</option>
+                            <option value="lorem">LOREM</option>
+                            <option value="ipsum">IPSUM</option>
+                            <option value="dolor">DOLOR</option>
+                            <option value="sit">SIT</option>
+                            <option value="amet">AMET</option>
+             </select>
+             
+             <span> EM </span> 
+              <select class="banner-select" multiple="multiple">
+                            <option value="sp" selected>SÃO PAULO</option>
+                            <option value="lorem">LOREM</option>
+                            <option value="ipsum">IPSUM</option>
+                            <option value="dolor">DOLOR</option>
+                            <option value="sit">SIT</option>
+                            <option value="amet">AMET</option>
+             </select>
+            
+            <!-- 3 LINHA -->
+         	<br>
+            <span>QUE ESTÃO </span> 
+          	<select class="banner-select" multiple="multiple">
+                            <option value="ANDAMENTO" selected>EM ANDAMENTO</option>
+                            <option value="lorem">LOREM</option>
+                            <option value="ipsum">IPSUM</option>
+                            <option value="dolor">DOLOR</option>
+                            <option value="sit">SIT</option>
+                            <option value="amet">AMET</option>
+             </select>
+            
+        </div>
+	</div> <!-- row -->
+</div>
+<!-- container --> 
+
+<!-------------------------------------------  PROJECT SEARCH -------------------------------------------->
+
+<div class="container">
+  	<div class="row nav-filter">
+    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        	<h3><span class="text-bold">34</span> PROJETOS ENCONTRADOS </h3>
+        </div>
+        
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6  text-right">
+        	<span class="mtop"> Visualizar <a href="#"> <i class="fa fa-th-large"></i></a> <a href="#"> <i class="fa fa-map-marker"></i></a> </span>
+           
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-right">
+        	 <span class="line-left"> </span>
+        	 <span class="mtop2"> Ordenados por </span> 
+             <span class="position-relative">
+             <select class="select-ordenado">
+              <option selected>Mágica</option>
+              <option>Popularidade</option>
+              <option>Novos</option>
+              <option>Quasefinalizando</option>
+              <option>Mais apoiados</option>
+              <option>Maior valor arrecadado</option>
+             </select>
+           	 <span class="arrow-select "> </span>
+             </span>
+            
+        </div>
+	</div> <!-- row -->
+</div>
+<!-- container --> 
+
+<!-------------------------------------------  PROJETOS -------------------------------------------->
+
+
+<div class="container">
+  <div class="row">
+  
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 remove-pl">
+    
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">01 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular" data-fill-color="#33cc99" data-percent="true" data-initial-value="82" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">02 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini ">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular" data-fill-color="#f2d032" data-percent="true" data-initial-value="77" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">03 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular" data-fill-color="#3399cc" data-percent="true" data-initial-value="36" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">04 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular"  data-fillStyle="#ffffff" data-fill-color="#f06241" data-percent="true" data-initial-value="96" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+    </div>
+   
+  </div>
+  <!-- .row --> 
+  
+<!-------//////////////////////////// Segunda Linha ////////////////////////// ----------------------> 
+
+<div class="row">
+  
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+    
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">01 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular" data-fill-color="#33cc99" data-percent="true" data-initial-value="82" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">02 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini ">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular" data-fill-color="#f2d032" data-percent="true" data-initial-value="77" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">03 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular" data-fill-color="#3399cc" data-percent="true" data-initial-value="36" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">04 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular"  data-fillStyle="#ffffff" data-fill-color="#f06241" data-percent="true" data-initial-value="96" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+    </div>
+ 
+  </div>
+  <!-- .row --> 
+  
+  
+<!-------//////////////////////////// Terceira Linha ////////////////////////// ----------------------> 
+
+<div class="row">
+  
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+    
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">01 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular" data-fill-color="#33cc99" data-percent="true" data-initial-value="82" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">02 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini ">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular" data-fill-color="#f2d032" data-percent="true" data-initial-value="77" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">03 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular" data-fill-color="#3399cc" data-percent="true" data-initial-value="36" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                  <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-top-20 popular-container remove-pr">
+        <div class="gray-border"> <img src="assets/image/popular-at-coleticidade/04.png">
+          <h5 class="text-bold">04 PARK AT ALAMEDA LORENA <br>
+            <span class="text-light">by Erin Bagwell </span> </h5>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut. </p>
+          
+          <!-- Inicio do Count -->
+          <div class="count-mini">
+            <ul class="graphs stats-container-mini centered biggie not-show-mobile">
+              <li class="animated" data-provide="circular"  data-fillStyle="#ffffff" data-fill-color="#f06241" data-percent="true" data-initial-value="96" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+            </ul>
+             <div class="picture not-show-mobile"> 
+                <!-- Imagem do usuário em destaque --> 
+                <img src="http://3.bp.blogspot.com/_e9F7JS5tJ4c/TC-0lD3pi8I/AAAAAAAABAs/ECsJyIQSjj8/s320/pepper_pug2_jpg_w450.jpg) no-repeat;"> 
+             </div>
+                
+            <div class="count-project count-mini">
+             
+              <div class="row cont-text">
+                <div class="remove-plr col-lg-12">
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 12 </span>
+                    <div> dias para acabar</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> 175 </span>
+                    <div> apoiadores</div>
+                  </div>
+                   <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 remove-pr"> <span> R$ 7.000 </span>
+                    <div> arrecadados</div>
+                  </div>
+                </div>
+              </div>
+              <!-- .row --> 
+            </div>
+            <!-- count-project --> 
+          </div>
+          <!-- count-mini --> 
+          <!-- Fim do Count --> 
+          
+        </div>
+        <!--  gray-border  --> 
+        
+      </div>
+      <!-- col-lg-3 col-md-3 col-sm-6 col-xs-12 --> 
+      
+    </div>
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center margin-top-20"> <br>
+      <hr>
+      <a href="#"> <span class="badge-veja-mais badge badge-info ">VEJA MAIS</span> </a> </div>
+  </div>
+  <!-- .row --> 
+  
+  
+</div>
+<!-- .container -->
+
+
+<!-------------------------------------------  MAPA FAIXA -------------------------------------------->
+
+<div class="container-fluid remove-plr position-relative">
+<div class="map-line">
+  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
+    <h3 class="text-white">Have a Community Project in Need of Funding? </h3>
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center margin-top-20"> <a href="mailto:thoy.nozaki@gmail.com?Subject=Mensagem%20Coleticidade" target="_top"> <span class="badge-envie-nos badge badge-success ">ENVIE PARA NÓS</span> </a> </div>
+  </div>
+  <!-- .map-banner--> 
+  
+</div>
+<!-- .container-fluid-->
+
+
+<!-------------------------------------------  FAIXA DESKTOP -------------------------------------------->
+
+<div id="plus-events" class="container-fluid gray-background">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
+        <h3>We area a crowdfunfing plataform, <br>
+          with the purpose to promote changes in cities. </h3>
+      </div>
+      <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 margin-top-20">
+        <div class="col-lg-15 col-md-15 col-sm-15 remove-plr col-sm-4 col-xs-12"> <img src="assets/image/icon-amazing-ideias.png">
+          <h4 class="margin-top-20"> IDEIAS INCRÍVEIS </h4>
+          <p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
+        </div>
+        <div class="col-lg-15 col-md-15 col-sm-15  remove-plr plus-icon not-show-mobile"> <img src="assets/image/icon-plus.png" > </div>
+        <div class="col-lg-15 col-md-15 col-sm-15  remove-plr col-sm-4 col-xs-12"> <img src="assets/image/icon-community.png">
+          <h4 class="margin-top-20"> COMUNIDADE</h4>
+          <p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
+        </div>
+        <div class="col-lg-15 col-md-15 col-sm-15 remove-plr plus-icon not-show-mobile"> <img src="assets/image/icon-plus.png"> </div>
+        <div class="col-lg-15 col-md-15 col-sm-15  remove-plr col-sm-4 col-xs-12"> <img src="assets/image/icon-public-power.png">
+          <h4 class="margin-top-20"> PODER PÚBLICO </h4>
+          <p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
+        </div>
+      </div>
+    </div>
+    <!-- .row --> 
+  </div>
+  <!-- .container --> 
+</div>
+<!-- .container-fluid --> 
+
+<!-------------------------------------------  FAIXA MOBILE -------------------------------------------->
+
+<div id="plus-events-mobile" class="container-fluid gray-background">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
+        <h3>We area a crowdfunfing plataform, <br>
+          with the purpose to promote changes in cities. </h3>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top-20">
+        <div id="carousel-mobile" class="carousel slide" data-ride="carousel"> 
+          <!-- Indicators -->
+          <ol class="carousel-indicators mobile-indicator">
+            <li data-target="#carousel-mobile" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-mobile" data-slide-to="1"></li>
+            <li data-target="#carousel-mobile" data-slide-to="2"></li>
+          </ol>
+          
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active mobile-carousel-box"> <img src="assets/image/icon-amazing-ideias.png">
+              <div class="carousel-caption carousel-text-mobile">
+                <h4 class="margin-top-20"> IDEIAS INCRÍVEIS </h4>
+                <p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
+              </div>
+            </div>
+            <!-- item -->
+            
+            <div class="item mobile-carousel-box"> <img src="assets/image/icon-community.png">
+              <div class="carousel-caption carousel-text-mobile">
+                <h4 class="margin-top-20"> COMUNIDADE</h4>
+                <p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
+              </div>
+            </div>
+            <!-- item -->
+            
+            <div class="item mobile-carousel-box"> <img src="assets/image/icon-public-power.png">
+              <div class="carousel-caption carousel-text-mobile">
+                <h4 class="margin-top-20"> PODER PÚBLICO </h4>
+                <p class="text-light">Etiam porta sem malesuada mama rnolis euismod. Lorem osun. </p>
+              </div>
+            </div>
+            <!-- item --> 
+            
+          </div>
+          
+          <!-- Controls 
+          <a class="left carousel-control" href="#carousel-mobile" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-mobile" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>--> 
+        </div>
+      </div>
+    </div>
+    <!-- .row --> 
+  </div>
+  <!-- .container --> 
+</div>
+<!-- .container-fluid --> 
+
+
+
+<footer>
+  <div class="container-fluid remove-plr">
+    <div class="footer-line">
+      <div class="container">
+        <div class="col-lg-15 col-md-15 col-sm-12 col-xs-12 margin-top-20"> <img src="assets/image/logo-coleticidade-blue.png"> </div>
+        <!-- cols-15 -->
+        
+        <div class="col-lg-15 col-md-15 col-sm-12 col-xs-12">
+          <ul class="menu-footer">
+            <li class="text-bold"> START </li>
+            <li> &nbsp; </li>
+            <li> <a href="#">Send a project </a> </li>
+            <li> <a href="#">Project in progress </a></li>
+            <li> <a href="#">How it works </a></li>
+            <li> <a href="#">FAQ </a></li>
+          </ul>
+        </div>
+        <!-- cols-15 -->
+        
+        <div class="col-lg-15 col-md-15 col-sm-12 col-xs-12">
+          <ul class="menu-footer">
+            <li class="text-bold"> WE TRANSFORM </li>
+            <li> &nbsp; </li>
+            <li> <a href="#">Projects we Love </a> </li>
+            <li> <a href="#">Partners</a></li>
+          </ul>
+        </div>
+        <!-- cols-15 -->
+        
+        <div class="col-lg-15 col-md-15 col-sm-12 col-xs-12">
+          <ul class="menu-footer">
+            <li class="text-bold"> ABOUT COLETICIDADE </li>
+            <li> &nbsp; </li>
+            <li> <a href="#">What is Coleticidade? </a> </li>
+            <li> <a href="#">Who we are</a></li>
+            <li> <a href="#">Thank you</a></li>
+            <li> <a href="#">Press</a></li>
+          </ul>
+        </div>
+        <!-- cols-15 -->
+        
+        <div class="col-lg-15 col-md-15 col-sm-12 col-xs-12">
+          <ul class="menu-footer">
+            <li> <span class="text-bold">TOGETHER</span>, we CAN </li>
+            <li> TRANSFORM <span class="text-bold">PUBLIC SPACES </span></li>
+            <li><span class="email"> nos@coleticidade.org </span> </li>
+          </ul>
+          <div class="redes-sociais-box">
+            <div class="redes-sociais"> <a href="#"> <img src="assets/image/icon-facebook.png"> </a></div>
+            <div class="redes-sociais"> <a href="#"> <img src="assets/image/icon-youtube.png"> </a> </div>
+            <div class="redes-sociais"> <a href="#"> <img src="assets/image/icon-instagram.png"> </a></div>
+          </div>
+        </div>
+        <!-- cols-15 --> 
+        
+      </div>
+      <!-- footer-line --> 
+    </div>
+    <!-- container --> 
+    
+    <!-------------------------------------------  RODAPÉ -------------------------------------------->
+    
+    <div class="all-right-reserved-line text-center">
+      <span class="text-gray">© 2014 Coleticidade. All rights reserved.</span>
+    </div>
+    <!-- all-rightsadasd-reserved-line --> 
+  </div>
+  <!-- .container-fluid--> 
+</footer>
+<script src="http://code.jquery.com/jquery.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/smooth-scroll.js"></script> 
+<script src="assets/js/bootstrap-tabcollapse.js"></script> 
+<script src="assets/js/map-coleticidade.js"></script> 
+<script src="assets/js/coleticidade.js"assdas></script> 
+<script src="assets/js/contador.js"></script> 
+<script src="assets/js/bootstrap-multiselect.js"></script> 
+<script type="text/javascript">
+
+$('.banner-select').multiselect();
+
+
+
+$('#progressbar').progressbar({
+    warningMarker: 60,
+    dangerMarker: 80,
+    maximum: 100,
+    step: 5
+});
+
+
+
+</script>
+</body>
+</html>

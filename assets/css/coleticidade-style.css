@@ -499,7 +499,7 @@ text-align: center;white-space: nowrap;vertical-align: baseline;background-color
 
 /*Navbar*/
 .navbar-default{background-color:#ffffff;border-color: transparent;}
-.navbar-brand {background-color:#ffffff; padding:10px; display:table; position:relative; z-index:1;}	
+.navbar-brand {background-color:#ffffff; padding:10px; display:table; position:relative; z-index:4;}	
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{background-color:#ffffff;}
 .navbar-toggle {margin-top:18px}		
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#52d4a9}

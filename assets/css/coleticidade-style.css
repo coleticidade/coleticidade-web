@@ -264,18 +264,20 @@ span.line {border-top: solid 1px #fff;width: 2%;height: 20px;line-height: 0;bord
 #search-project-banner span, .btn-blue-square {font-size:36px; font-family: avenir-light, Verdana, Geneva, sans-serif;}
 #search-project-banner span {}
 .btn-blue-square {color: #FFF;background-color: #3399cc;border-color: #3399cc;border-radius: 0; padding: 0 10px;}
+.btn-blue-square:hover {color: #FFF;background-color: #2d88b6;border-color: #3399cc;border-radius: 0; padding: 0 10px;}
 .dropdown-menu-banner {top: 50px;width: 100%;border-radius: 0; border-top: solid 1px #49addf; background-color:#3399cc;}
 .dropdown-menu-banner li a {color:#fff; font-family: avenir-light, Verdana, Geneva, sans-serif;}
 
 .dropdown-menu-banner li {padding:0 10px;}
 
-.nav-filter h3 {font-size:25px; color:#3399cc; }
+.nav-filter h3 {font-size:20px; color:#3399cc; }
 .nav-filter > div[class^="col-"] > span > a > i {padding:0 5px 0 5px;}
 .nav-filter > div[class^="col-"] > span.mtop {position: relative;top: 20px; color:#3399cc;}
 .nav-filter > div[class^="col-"] > span.mtop a {color:#3399cc;}
 .nav-filter > div[class^="col-"] > span.mtop a:hover {color:#3ce6ff;}
 .nav-filter > div[class^="col-"] > span.mtop2 {top: 15px; position: relative; color:#3399cc;}
-.select-ordenado {position: relative;top: 15px;background-color: #3399cc;border-radius: 20px;color: #fff;padding: 3px 30px 3px 3px; -webkit-appearance: none; appearance: none; -moz-appearance: none; -ms-appearance: none;}
+.select-ordenado {position: relative;top: 15px;background-color: #3399cc;border-radius: 20px;color: #fff;padding: 5px 30px 5px 10px; -webkit-appearance: none; appearance: none; -moz-appearance: none; -ms-appearance: none;}
+.select-ordenado option {padding:10px; margin-bottom:5px;}
 .arrow-select {width: 0;position: absolute;top: 22px;right: 15px;height: 0;border-style: solid;border-width: 5px 5px 0 5px;border-color: #FFFFFF transparent transparent transparent;}
 span.line-left {border-left: solid 1px #e0e0e0;position: relative;left: -15%;top: 14px;}
 

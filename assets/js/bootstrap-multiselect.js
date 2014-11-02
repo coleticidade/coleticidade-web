@@ -248,9 +248,9 @@
             filterBehavior: 'text',
             includeFilterClearBtn: false,
             preventInputChangeEvent: false,
-            nonSelectedText: 'SELECIONE',
-            nSelectedText: 'SELECIONADOS',
-            numberDisplayed: 3,
+            nonSelectedText: 'SELECIONE ALGO',
+            nSelectedText: 'A MAIS',
+            numberDisplayed: 2,
             disableIfEmpty: false,
             templates: {
                 button: '<button type="button" class="multiselect dropdown-toggle" data-toggle="dropdown"></button>',

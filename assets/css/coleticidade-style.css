@@ -111,6 +111,17 @@ a {cursor:pointer;}
 	.link {color:#3399cc;}
 	.link:hover {color:#4aadde;  text-decoration:underline;}
 	
+	
+	/*SEARCH BOX*/
+	#open-search {position: absolute;z-index: 3;background: rgba(53,112,144,0.9);top: 72px;width: 100%;left: 0;color: #fff;text-align: center; }
+	#open-search .search-input {width:50%; margin:auto; padding:50px 0;}
+
+	#open-search .search-input > input {background-color:transparent; border-top:0; border-right:0; border-bottom:0; border-left: solid 2px #fff; color:#fff; font-size:18px; font-family:avenir-light, Verdana, Geneva, sans-serif; text-transform:uppercase; width:100%; padding:10px; height:60px;}
+	#open-search .search-input > ::-webkit-input-placeholder{color:#fff; font-size:18px; font-family:avenir-light, Verdana, Geneva, sans-serif; text-transform:uppercase;}
+	#open-search .search-input button{height:60px;}
+	
+	
+
 /* PROJECT */
 
 .background-image-full {height:670px; position:absolute; width: 100%;overflow: hidden;}

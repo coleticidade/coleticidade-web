@@ -143,7 +143,7 @@ a {cursor:pointer;}
 	.picture-in img {width: 70px;	height: 70px;		border-radius: 50%;}
 	.count-text-in span {font-family: "avenir-bold",Verdana, Geneva, sans-serif; font-size:21px;}
 	.count-text-in div {font-size:11px; text-transform:uppercase;}
-	
+	.count-project-box > .count-project {background-color:#FFF;width: 95%;margin-left: 30px;}
 	
 	.stats-container-in {	position: absolute; z-index:2; padding-left: 0;}
 	.stats-container-in li {display: inline-block;margin: 0 4% 5px;position: relative;}

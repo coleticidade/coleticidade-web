@@ -4,6 +4,8 @@
 google.maps.event.addDomListener(window, 'load', init);     
 
             function init() {
+				
+				
                 // Basic options for a simple Google Map
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 				
@@ -62,10 +64,11 @@ google.maps.event.addDomListener(window, 'load', init);
 	
 					
 			  
-			// Mapa
-            var mapElement = document.getElementById('map');
+			var mapElement = document.getElementById('map');
 
             var map = new google.maps.Map(mapElement, mapOptions);
+			
+			
 			
 			// Icones Customizados
 			
@@ -118,7 +121,9 @@ google.maps.event.addDomListener(window, 'load', init);
 			
 			map.fitBounds(bounds);
 			
-			
+					
+           
 		
 }
+
 

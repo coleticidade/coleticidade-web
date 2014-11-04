@@ -46,7 +46,7 @@ a {cursor:pointer;}
 	.principal-banner>.item>img {height:100%; width:auto;}
 	
 	.count-project-box{width:100%; height:150px;margin-top: 5%;}
-	.count-project {background-color:rgba(255, 255, 255, 1); width:100%; height:80px;top: 40px;position: relative; color:#333; font-family: "avenir-roman",Verdana, Geneva, sans-serif; padding:10px;}
+	.count-project {width:100%; height:80px;top: 40px;position: relative; color:#333; font-family: "avenir-roman",Verdana, Geneva, sans-serif; padding:10px;}
 	.picture {position: absolute;z-index: 3; left: 75px;bottom: -55px;}
 	.picture img {width: 70px;	height: 70px;		border-radius: 50%;}
 	.count-text span {font-family: "avenir-bold",Verdana, Geneva, sans-serif; font-size:26px;}
@@ -88,6 +88,7 @@ a {cursor:pointer;}
 	.badge-veja-mais {top: -35px;position: relative; padding: 15px 50px !important; border-radius: 53px !important;}
 		
 	#map {width: 100%; height: 350px; position:relative;}
+	.map-full {height:600px !important;}	
 	.map-line{width:100%; background-color:#3399cc; padding:25px 0 ; display:table; }
 	.footer-line{width:100%; background-color:#2a394a; padding:40px ;}	
 	.all-right-reserved-line{width:100%; background-color:#fff; height:50px; text-align:center; vertical-align:middle; line-height:50px; }	
@@ -171,7 +172,7 @@ i.fa.fa-picture-o.fa-2x {margin-top: 10px;font-size: 50px;margin-left: 10px;}
 
 
 .btn-back-box{text-align:center; padding-top: 45px;}
-.btn-back-box-sm {text-align:center;} 
+.btn-back-box-sm {text-align:center; position:relative; z-index:5;} 
 .btn-back-box button {font-size: 18px;line-height: 22px;padding: 17px 45px; margin:auto;}
 
 .btn-back-box-sm a{font-size: 18px;line-height: 22px;padding: 15px 55px; margin:auto;}

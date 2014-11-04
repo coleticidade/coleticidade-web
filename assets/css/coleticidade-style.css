@@ -20,6 +20,11 @@ input.login {background-color:#f7f7f7; font-family: avenir-light, Verdana, Genev
 .borde-top {border-top:solid 1px #CCCCCC;}	
 #join {margin-top:6px;}	
 a {cursor:pointer;}
+.img-width img {width:100%; margin-top: 15px;}
+
+/*Maps Tag*/
+
+.gm-style .gm-style-iw {font-family:avenir-light,Verdana, Geneva, sans-serif; }
 	
 /* HOME */
 	#nav-header	li, .navbar-nav {text-align:center;}

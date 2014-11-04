@@ -40,7 +40,7 @@
               <li class="divider-vertical not-show-mobile"></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a class="align-navbar-right" data-toggle="collapse" data-target="#open-search" aria-expanded="true" aria-controls="open-search"><i class="fa fa-search"> </i></a></li>
+              <li><a class="align-navbar-right" data-toggle="collapse" data-target="#open-search" aria-expanded="true" aria-controls="open-search" onClick="$(#input-selected).select();"><i class="fa fa-search"> </i></a></li>
               <li class="divider-vertical"></li>
               <li>
                 <div class="dropdown"> <a class="remove-pr align-navbar-right log-in" data-toggle="dropdown"><span class="text-info">LOG IN</span> OR</a>
@@ -103,11 +103,10 @@
 
 <div class="container-fluid">
     <div id="open-search" class="collapse">
-    
-
+   
     <div class="col-lg-12 remove-plr">
     <div class="input-group search-input">
-      <input type="text" placeholder="Digite um termo que deseja buscar :)">
+      <input id="input-selected" type="text" placeholder="Digite um termo que deseja buscar :)">
      <span class="input-group-btn">
         <button class="btn btn-transparent" type="button"><i class="fa fa-search fa-2x"> </i></button>
       </span>
@@ -611,6 +610,8 @@
 <script src="assets/js/contador.js"></script> 
 <script src="assets/js/bootstrap-multiselect.js"></script> 
 <script type="text/javascript">
+
+// Input selected
 
 $('.banner-select').multiselect();
 

@@ -87,7 +87,7 @@ a {cursor:pointer;}
 	.all-right-reserved-line{width:100%; background-color:#fff; height:50px; text-align:center; vertical-align:middle; line-height:50px; }	
 	.all-right-reserved-line p {margin:0;}	
 	
-	#close-div {position:relative;}
+
 	.map-layer {background: rgba(124,133,144, 0.8); width:33%; height: 352px; position:absolute; bottom:-1px; left:0; z-index:20; padding:20px; color:#FFF;}
 	.map-layer:after{ content:"";  width:0;  height:0;  position:absolute;  border-top:20px solid transparent;  border-bottom:20px solid transparent;  border-left:20px solid rgba(124,133,144, 0.8); right:-20px; top:45%;}
 	.map-layer p {float: right;text-align: right;font-size: 17px;position: absolute;right: 20px;top: 40%;}
@@ -421,8 +421,13 @@ span.line-left {border-left: solid 1px #e0e0e0;position: relative;left: -15%;top
 #sobre-coleticidade-carousel > ol.carousel-indicators {position: absolute;bottom: 35%;left: 97%;z-index: 15;width: 10px;padding-left: 0;margin-left: 0;text-align: center;list-style: none;}
 
 .sobre-text {margin-top:20px;}
-.sobre-text h4{font-family:avenir-bold, Verdana, Geneva, sans-serif; font-size:22px; padding-bottom:20px; color:#606060;}
+.sobre-text h4{font-family:avenir-bold, Verdana, Geneva, sans-serif; font-size:22px; padding-bottom:5px; color:#606060;}
 .sobre-text  p {font-size:16px; font-family:avenir-light, Verdana, Geneva, sans-serif; color:#606060; text-align:left;}
+
+.na-midia-box {margin-top: 25px;display: table; border-top: solid 1px #CCC;}
+.na-midia-date p{text-align: center;margin-top: 13px;background-color: #eee;padding: 17px 20px; color:#999;}
+.na-midia-box h3 {font-family:"Times New Roman", Times, serif; font-weight:bold;}
+
 
 .usuarios-box > [class^="col-"] {margin-bottom:60px;}
 .usuarios-box > [class^="col-"] p, .usuarios-box > [class^="col-"] h4, .usuarios-box > [class^="col-"] .redes-sociais-sobre {text-align:center;}
@@ -733,9 +738,13 @@ text-shadow: -1px 1px 0px #fff;
 	.redes-sociais-box {margin-left: 37%;}
 }
 
+@media (max-width:1500px) {
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {display: block; height:100%; width:auto;}
+}
+
 @media (max-width:2000px) {
 	.background-image-full-mini img {width:auto; height:100%;}
-	.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {display: block; height: 100%; width:auto;}
+	.img-responsive, .thumbnail>img, .thumbnail a>img{display: block; height: 100%; width:auto;}
 	.background-image-full img {width:auto; height:100%;}
 }
 	

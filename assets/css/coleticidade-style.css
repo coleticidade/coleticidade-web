@@ -88,7 +88,7 @@ a {cursor:pointer;}
 	.badge-veja-mais {top: -35px;position: relative; padding: 15px 50px !important; border-radius: 53px !important;}
 		
 	#map {width: 100%; height: 350px; position:relative;}
-	.map-full {height:600px !important;}	
+	.map-full {height:550px !important;}	
 	.map-line{width:100%; background-color:#3399cc; padding:25px 0 ; display:table; }
 	.footer-line{width:100%; background-color:#2a394a; padding:40px ;}	
 	.all-right-reserved-line{width:100%; background-color:#fff; height:50px; text-align:center; vertical-align:middle; line-height:50px; }	
@@ -96,9 +96,11 @@ a {cursor:pointer;}
 	
 
 	.map-layer {background: rgba(124,133,144, 0.8); width:33%; height: 352px; position:absolute; bottom:-1px; left:0; z-index:20; padding:20px; color:#FFF;}
-	.map-layer:after{ content:"";  width:0;  height:0;  position:absolute;  border-top:20px solid transparent;  border-bottom:20px solid transparent;  border-left:20px solid rgba(124,133,144, 0.8); right:-20px; top:45%;}
-	.map-layer p {float: right;text-align: right;font-size: 17px;position: absolute;right: 20px;top: 40%;}
-	.map-layer a, .map-layer a:hover {color:#FFF;}
+	.map-layer:after, .map-layer-full:after{ content:"";  width:0;  height:0;  position:absolute;  border-top:20px solid transparent;  border-bottom:20px solid transparent;  border-left:20px solid rgba(124,133,144, 0.8); right:-20px; top:45%;}
+	.map-layer p, .map-layer-full p {float: right;text-align: right;font-size: 17px;position: absolute;right: 20px;top: 40%;}
+	.map-layer a, .map-layer a:hover, .map-layer-full a, .map-layer-full:hover {color:#FFF;}
+	
+	.map-layer-full {background: rgba(124,133,144, 0.8); width:33%; height: 550px; position:absolute; bottom:-1px; left:0; z-index:20; padding:20px; color:#FFF;}
 	
 	ul.menu-footer {padding: 20px 0 0 0;}
 	ul.menu-footer .text-bold {font-size:14px;}

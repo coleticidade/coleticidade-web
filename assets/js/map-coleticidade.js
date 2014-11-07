@@ -1,9 +1,7 @@
 // JavaScript Document
 
- // When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);     
 
-            function init() {
+            function initialize() {
 				
 				
                 // Basic options for a simple Google Map
@@ -120,10 +118,19 @@ google.maps.event.addDomListener(window, 'load', init);
 			}
 			
 			map.fitBounds(bounds);
-			
-					
-           
 		
+	
 }
 
+			function timeout_trigger(lat, lng) {
+				google.maps.event.trigger(map, "resize");
+				
+				
+			}
+			function timeout_init() {
+				setTimeout('timeout_trigger()', 300);
+			}
 
+
+ // When the window has finished loading create our google map below
+google.maps.event.addDomListener(window, 'load', initialize);    

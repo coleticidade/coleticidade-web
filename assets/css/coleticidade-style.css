@@ -13,6 +13,7 @@ hr {margin-top: 15px;margin-bottom: 15px;}
 input.login {background-color:#f7f7f7; font-family: avenir-light, Verdana, Geneva, sans-serif; height:40px;}
 .gray-background{background-color:#f7f7f7; padding: 30px 0; position: relative;}
 .gray-border {border:solid 4px #f7f7f7;padding: 12px 12px 120px 12px;}
+.gray-border > img {width:100%;}
 .disable {display:none;}
 .banner-home {height: 670px; }
 .position-relative{position:relative;}
@@ -82,7 +83,7 @@ a {cursor:pointer;}
 	.popular-container a, .popular-container h5, .popular-container p {color:#222;}
 	.popular-container a {border:solid 2px #fff; display:block;}
 	.popular-container a:hover {background-color:#e6fff7; display:block; color:#222; border:solid 2px #00d79b;}
-	.popular-container img{width: 100%;}
+
 	.popular-container, .popular-container h5 {line-height:20px;}
 	.badge-envie-nos { padding: 15px 50px !important; border-radius: 53px !important;}
 	.badge-veja-mais {top: -35px;position: relative; padding: 15px 50px !important; border-radius: 53px !important;}
@@ -729,7 +730,7 @@ text-shadow: -1px 1px 0px #fff;
 	#nav-header	li, .navbar-nav {text-align:left;}
 	.popover.top > .arrow, .popover.top .box-reverse.left, .popover.top .box-reverse.right, .popover.top > .reverse {display:none;}
 	.disable {display:block;}
-	.banner-indicators {bottom: 325px;}
+	
 	.not-show-mobile {display:none !important;}
 	.banner-home {top: 50px; height:400px; overflow:hidden; margin-bottom: 30px;}
 	.navbar-collapse.in { overflow-y:inherit ; }
@@ -739,10 +740,13 @@ text-shadow: -1px 1px 0px #fff;
 }
 
 @media (max-width: 869px) {
-	.align-slider {margin-top: -60px;}
+	.btn-back-box-sm a {font-size: 12px;line-height: 22px;padding: 5px 35px;margin: auto;}
 	.navbar-toggle {margin-top: 20px;}
-	.align-slider{top:0;position:relative}
+	.align-slider{top:-20px;position:relative;margin-top: -60px;}
 	.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {display: block; max-width: none; height: 100%; width:auto;}
+	.count-mini > .stats-container-mini {position:relative;}
+	.count-mini > .picture {position: absolute;z-index: 3;left: 30px;bottom: 190px;}
+	h3 {font-size: 125%;} 
 }	
 
 @media (max-width:810px){

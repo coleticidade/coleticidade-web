@@ -6,7 +6,7 @@
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;}
-p {text-align:justify;}
+
 
 body{font-family: avenir-roman, Arial, Helvetica, sans-serif;}  
 hr {margin-top: 15px;margin-bottom: 15px;}
@@ -37,7 +37,7 @@ a {cursor:pointer;}
 	
 	#nav-header	li:hover p, #nav-header	li:hover span {color:#0CC;}
 	
-		.navbar-right {width:250px;}
+		.navbar-right {width:250px;z-index: 10;position: relative;}
 		.navbar-right li{ float:left; }
 		.navbar .divider-vertical {margin: 15px 2px 0px 2px; height:37px; border-right: solid 1px #DBDBDB;}
 		.navbar .nav > li:last-child {display: none;}
@@ -111,7 +111,7 @@ a {cursor:pointer;}
 	#email {font-size:14px;  font-family:avenir-bold, Verdana, Geneva, sans-serif}
 	.redes-sociais {  float:left; margin-right:10px;}
 	.log-in {margin-top: 22px;margin-left: 10px;display: table; cursor:pointer;}
-	.dropdown-login {padding: 5px 20px 15px; width:330px;position: absolute;top: 53px;left: -102px !important;border-radius: 0;}
+	.dropdown-login {padding: 5px 20px 15px; width:330px;position: absolute;top: 53px;left: -102px !important;border-radius: 0; z-index:20;}
 	/*.dropdown-login span {padding-top:13px;}*/
 	.form-group h3 {margin-top:0; margin-bottom:25px;}
 	.btn-facebook {background-color:#3b5998; color:#fff; width:100%; text-align:center; padding:10px 0;}
@@ -518,7 +518,7 @@ text-align: center;white-space: nowrap;vertical-align: baseline;background-color
 .navbar-default{background-color:#ffffff;border-color: transparent;}
 .navbar-brand {background-color:#ffffff; padding:10px; display:table; position:relative; z-index:4;}	
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{background-color:#ffffff;}
-.navbar-toggle {margin-top:18px}		
+.navbar-toggle {margin-top:18px; z-index:10;}		
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#52d4a9}
 .navbar-default .navbar-toggle:focus .icon-bar{background-color:#fff;}
 
@@ -696,6 +696,8 @@ color: #999;
 text-shadow: -1px 1px 0px #fff;
 }
 
+
+
 @media only screen and (min-width: 1010px) { 
 .stats-container li {margin: 0 2% 5px;}
 }
@@ -757,9 +759,9 @@ text-shadow: -1px 1px 0px #fff;
 }
 
 @media (max-width:767px) {
-.background-image-full {
-height: 520px;
-}
+.background-image-full {height: 520px;}
+#join {margin-top: 12px;}
+.dropdown-login {padding: 19px 20px 15px;width: 330px;position: absolute;top: 28px;left: -3px !important;border-radius: 0;}
 }
 
 @media (max-width:576px){
@@ -776,4 +778,13 @@ height: 520px;
 
 }
 
+@media (max-width:319px){
+   .not-show-mobile-320 {display:none !important;}
+	.col-xxs-12 {width:100%; padding-left:0;}
+	.map-layer {width: 50%;}
+	.map-layer p, .map-layer-full p {font-size: 12px;}
+	.redes-sociais-box {margin-left: 0%;width: 150%;}
+	.dropdown-login {padding: 5px 32px 15px;width: 317px;position: absolute;top: 25px;z-index: 20;left: -102px !important;border-radius: 0;}
+	#join {margin-top: 12px;}
+}
 

@@ -44,7 +44,7 @@ a {cursor:pointer;}
 	
 	
 	.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {display: block; max-width: none; width: 100%;}
-	.principal-banner>.item>img {height:100%; width:auto;}
+	.principal-banner>.item>img {width:100%;}
 	
 	.count-project-box{width:100%; height:150px;margin-top: 5%;}
 	.count-project {width:100%; height:80px;top: 40px;position: relative; color:#333; font-family: "avenir-roman",Verdana, Geneva, sans-serif; padding:10px;}
@@ -711,6 +711,7 @@ text-shadow: -1px 1px 0px #fff;
 
 
 @media (max-width:2000px) {
+	
 	.background-image-full-mini img {width:auto; height:100%;}
 	.img-responsive, .thumbnail>img, .thumbnail a>img{display: block; height: 100%; width:auto;}
 	.background-image-full img {width:auto; height:100%;}

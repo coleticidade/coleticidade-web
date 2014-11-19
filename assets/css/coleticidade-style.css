@@ -726,7 +726,13 @@ text-shadow: -1px 1px 0px #fff;
  .carousel-control .icon-prev, .carousel-control .icon-next, 
  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {position: absolute;top: 95%;z-index: 5;display: inline-block;}	
  .col-md-6 > .gray-border > .count-mini > .stats-container-mini {left:10px;}
-	
+ .infos-project {border-bottom: solid 1px rgba(0,0,0,0.5);border-top: solid 1px rgba(0,0,0,0.5);padding: 10px 0;margin-left: 10px;margin-top: 20px;}
+ .count-project-in {background-color: rgba(255, 255, 255, 0);width: 100%;color: #222;font-family: "avenir-roman",Verdana, Geneva, sans-serif;}
+ .infos-project, .redes-sociais-in  i, .follow-project a{color:#606060;}
+ .project-back-button {width: 90%;text-align: center;top: 47px;left: 100px;position: relative;}
+ .project-back-button a {background-color: #d5d5d5;height: 100%;width: 100%;display: block;padding: 10px 20px 10px 65px;color: #333;}
+ .footer-line {text-align:center;}	
+ .redes-sociais-box {margin-left: 40%;}
 }
 
 @media (max-width: 870px) {
@@ -798,5 +804,6 @@ text-shadow: -1px 1px 0px #fff;
 
 @media (max-width:330px){
 	.redes-sociais-box {margin-left: 0%;width: 150%;}
+	.image-project-crop {height: 200px;overflow: hidden;}
 }
 

@@ -409,7 +409,7 @@ span.line-left {border-left: solid 1px #e0e0e0;position: relative;left: -15%;top
 /* SOBRE COLETICIDADE */
 	#sobre-banner {color:#FFF; height:320px;  line-height:50px; padding-top: 40px; position:relative;}
 	#sobre-banner > p {line-height: 10px; font-size:18px;}
-	.menu-sobre {width:100%; height:50px; background-color: #3399cc; position:absolute; left:0;top: -51px; color:#FFF;}
+	.menu-sobre {width:100%; background-color: #3399cc; position:relative; left:0;top: -1px; color:#FFF; z-index:5;}
 	.sobre-tabs {border-bottom: 0;}
 	.sobre-tabs > li > a {color:#8dd6fb; font-size:13px; font-family:avenir-light, Verdana, Geneva, sans-serif; height:48px; padding-top: 15px;}
 	.sobre-tabs > li > a:hover{color:#FFF;}
@@ -432,6 +432,7 @@ span.line-left {border-left: solid 1px #e0e0e0;position: relative;left: -15%;top
 
 .sobre-text {margin-top:20px;}
 .sobre-text h4{font-family:avenir-bold, Verdana, Geneva, sans-serif; font-size:22px; padding-bottom:5px; color:#606060;}
+.sobre-text h5 {font-family:avenir-bold, Verdana, Geneva, sans-serif; font-size:18px; padding-bottom:5px; color:#606060;}
 .sobre-text  p {font-size:16px; font-family:avenir-light, Verdana, Geneva, sans-serif; color:#606060; text-align:left;}
 
 .na-midia-box {margin-top: 25px;display: table; border-top: solid 1px #CCC;}
@@ -770,11 +771,9 @@ text-shadow: -1px 1px 0px #fff;
 #join {margin-top: 12px;}
 .dropdown-login {padding: 19px 20px 15px;width: 330px;position: absolute;top: 28px;left: -3px !important;border-radius: 0;}
 .infos-project, .redes-sociais-in  i, .follow-project a{color:#606060;}
-.project-backers-box img{ 	
-	width: 10%;                        
-	width: -webkit-calc(100% / 10);  
-	width: -moz-calc(100% / 10);     
-	width: calc(100% / 10);          } 
+.project-backers-box img{width: 10%;width: -webkit-calc(100% / 10);	width: -moz-calc(100% / 10); width: calc(100% / 10); } 
+
+#o-que-e-coleticidade h4, .sobre-text h4 {padding: 10px 0 20px 0;}
 }
 
 @media (max-width:576px){
@@ -805,5 +804,7 @@ text-shadow: -1px 1px 0px #fff;
 @media (max-width:330px){
 	.redes-sociais-box {margin-left: 0%;width: 150%;}
 	.image-project-crop {height: 200px;overflow: hidden;}
+	.content-banner-sobre-coleticidade p {font-size: 12px !important; padding: 0 10% !important;}
+	
 }
 

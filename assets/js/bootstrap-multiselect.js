@@ -143,7 +143,8 @@
                 }
                 else {
                     if (options.length > this.numberDisplayed) {
-                        return options.length + ' ' + this.nSelectedText + '  <i class="fa fa-angle-down"></i>';
+					
+                        return options.eq(0).text() + ' ' + this.nSelectedText + ' ' + (options.length - 1) + ' ' +  '  <i class="fa fa-angle-down"></i>';
                     }
                     else {
                         var selected = '';
@@ -249,7 +250,7 @@
             includeFilterClearBtn: false,
             preventInputChangeEvent: false,
             nonSelectedText: 'SELECIONE ALGO',
-            nSelectedText: 'A MAIS',
+            nSelectedText: 'E MAIS',
             numberDisplayed: 2,
             disableIfEmpty: false,
             templates: {

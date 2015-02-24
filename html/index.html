@@ -4,6 +4,37 @@
 <title>COLETICIDADE</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+ <!-- Google Analytics -->
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-52353305-1', 'auto');
+ ga('send', 'pageview');
+</script>
+    <!-- Fim do Google Analytics -->
+    
+    <!-- Hotjar -->
+    <script>
+    (function(f,b){
+        var c;
+        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+        f._hjSettings={hjid:5804, hjsv:3};
+        c=b.createElement("script");c.async=1;
+        c.src="//static.hotjar.com/c/hotjar-5804.js?sv=3";
+        b.getElementsByTagName("head")[0].appendChild(c); 
+    })(window,document);
+</script>
+    <!-- Fim do Hotjar -->
+    
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("96b0fe618ad856f46ab921b0d53088ee");</script>
+    <!-- end Mixpanel -->
+
 <!-- Bootstrap -->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -71,7 +102,7 @@
               <div class="count-project-box not-show-mobile" >
                 <div class="count-project row ">
                   <ul class="graphs stats-container centered biggie">
-                    <li class="animated" data-provide="circular" data-fill-color="#33cc99" data-percent="true" data-initial-value="45" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
+                    <li class="animated" data-provide="circular" data-fill-color="#33cc99" data-percent="true" data-initial-value="17" data-max-value="100" data-label="COMPLETADO" data-title="" data-dates="" style="width: 155px; height: 155px;"> </li>
                   </ul>
                   <div class="picture"> 
                     <!-- Imagem do usuário em destaque --> 
@@ -175,14 +206,17 @@
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
               <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
+                  <p>Teste pagamento R$ 1,00 </p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
-                  <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
-                  <span class="text-bold">THIS REWARD</span></button>
-                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 1,00 </span> </div>
+                  <form method='post' action='https://www.moip.com.br/PagamentoSimples.do'>
+                    <input type='hidden' name='id_carteira' value='juliocvidal'/>
+                    <input type='hidden' name='valor' value='100'/>
+                    <input type='hidden' name='nome' value='Parklet HoW'/>
+                    <input type='image' name='submit' src='https://static.moip.com.br/imgs/buttons/bt_pagar_c02_e04.png' alt='Pagar' border='0' />
+                  </form>
+
               </div>
             </div>
             <!-- row Modulo 001 --> 
@@ -192,34 +226,21 @@
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
               <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
+                  <p>Teste pagamento R$ 2,00. </p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
-                  <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
-                  <span class="text-bold">THIS REWARD</span></button>
-                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 5 </span> <span class="text-light"> apoiadores </span> </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 2,00 </span> </div>
+                <form method='post' action='https://www.moip.com.br/PagamentoSimples.do'>
+                    <input type='hidden' name='id_carteira' value='juliocvidal'/>
+                    <input type='hidden' name='valor' value='100'/>
+                    <input type='hidden' name='nome' value='Parklet HoW'/>
+                    <input type='image' name='submit' src='https://static.moip.com.br/imgs/buttons/bt_pagar_c02_e04.png' alt='Pagar' border='0' />
+                  </form>
               </div>
             </div>
             <!-- row Modulo 002 --> 
             
-            <!-- Modulo 003 -->
-            <div class="row reward-modules">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
-              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
-                  <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
-                  <span class="text-bold">THIS REWARD</span></button>
-                </div>
-              </div>
-            </div>
-            <!-- row Modulo 003 --> 
+           
             
           </div>
           <!--col-lg-12 col-md-12 col-sm-12 col-xs-12 REWARDS --> 

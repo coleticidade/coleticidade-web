@@ -98,14 +98,14 @@
           
           <div class="modal fade" id="apoie-projeto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
-              <div class="modal-content">
+              <div class="modal-content" id="dinamic-modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cancel</span></button>
                   <h4 class="modal-title">Você está prestes a fazer parte do grupo que
 está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontecer.
-				  <br> <small> Selecione sua recompensa :) </small></h4>
+				  <br> <small id="selecione-sua-recompensa"> Selecione sua recompensa :) </small></h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" id="dinamic-modal-body">
                  	<div class="row">
                     
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 rewards-project-box title-project-box">
@@ -118,48 +118,16 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
                     <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
-                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 1,00 </span> </div>
                   <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
-                    <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
-                    <span class="text-bold">THIS REWARD</span></button>
+                    <button class="btn btn-blue btn-lg pull-right" onclick='$("#dinamic-modal-body").html($("#info-pagamento").html());$("#selecione-sua-recompensa").html("Você está colaborando com R$ 1,00. =)");'> SELECIONAR <br> <span class="text-bold">Esta Recompensa</span></button>
                   </div>
                 </div>
               </div>
               <!-- row Modulo 001 --> 
               
-              <!-- Modulo 002 -->
-              <div class="row reward-modules">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
-                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
-                  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
-                    <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
-                    <span class="text-bold">THIS REWARD</span></button>
-                  </div>
-                </div>
-              </div>
-              <!-- row Modulo 002 --> 
+             
               
-              <!-- Modulo 003 -->
-              <div class="row reward-modules">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 image-reward-project remove-pr"> <img src="assets/image/project/project01/01-reward.jpg"> </div>
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 remove-plr">
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p>Etiam porra sem maiesuada magna mom's euismod. Integer posuere erat a ante venenaﬁs dapibus posuere van? afquer. Haesent commodo cursus magna. val scebrisque nisl consectetur at Aenean eu ieo quam. Peﬂentesque omare sem tacinia quam venenaﬁs vestibulum. Etiam porta sem maiesuada magna moﬁs euismod. </p>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project-backers"> <i class="fa fa-trophy text-green"></i> <span class="text-bold"> 10 </span> <span class="text-light"> backers </span> </div>
-                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  project-backers"> <span class="text-light"> R$ </span> <span class="text-bold"> 120,00 </span> </div>
-                  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 btn-reward-box">
-                    <button class="btn btn-blue btn-lg pull-right"> SELECT <br>
-                    <span class="text-bold">THIS REWARD</span></button>
-                  </div>
-                </div>
-              </div>
-              <!-- row Modulo 003 --> 
               
             </div>
             <!--col-lg-12 col-md-12 col-sm-12 col-xs-12 REWARDS --> 
@@ -173,6 +141,96 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
               </div>
             </div>
           </div> <!-- modal fade -->
+
+          <div class="col-lg-7 col-md-7 col-xs-7 col-sm-7" style="display:none" id="info-pagamento" class="modal-body">
+                <form role="form" action="http://coleticidade.org/localxp/rs/pagar">
+                  <div class="form-group">
+                    <label for="#" style="color:#333">Nome</label>
+                    <input type="name" class="form-control" id="name" placeholder="Digite o nome">
+                  </div>
+                  <div class="form-group">
+                    <label for="#" style="color:#333">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite o e-mail">
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="#" style="color:#333">Data de Nascimento</label>
+                        <input type="born" class="form-control" id="born" placeholder="dd/mm/aaaa">
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <!-- row -->
+                  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="#" style="color:#333">Estado</label>
+                        <br>
+                        <select class="form-control">
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="form-group">
+                        <label for="#" style="color:#333">Cidade</label>
+                        <input type="city" class="form-control" id="cidade" placeholder="Digite a cidade">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                     <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="#" style="color:#333">Logradouro</label>
+                        <input type="born" class="form-control" id="born" placeholder="Logradouro">
+                      </div>
+                    </div>
+                     <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="#" style="color:#333">Numero</label>
+                        <input type="born" class="form-control" id="born" placeholder="Número">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                     <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="#" style="color:#333">Complemento</label>
+                        <input type="born" class="form-control" id="born" placeholder="Complemento">
+                      </div>
+                    </div>
+                     <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="#" style="color:#333">Bairro</label>
+                        <input type="born" class="form-control" id="born" placeholder="dd/mm/aaaa">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="#">Forma de Pagamento</label>
+                    <br>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="debito" value="debito">
+                      Débito </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="credito" value="credito">
+                      Crédito </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="boleto" value="boleto">
+                      Boleto </label>
+                  </div>
+
+
+                  <button type="submit" class="btn btn-success btn-coletividade pull-right">PAGAR</button>
+                </form>
+              </div>
           
           <!-------------------------------------------  INFOS DO PROJETO -------------------------------------------->
           

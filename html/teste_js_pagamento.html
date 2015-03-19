@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Checkout Transparente - Boleto</title>
+        <meta name="author" content="Moip Pagamentos S/A" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <script type="text/javascript">
+            var funcaoSucesso = function(data){
+                alert('Sucesso\n' + JSON.stringify(data));
+                window.open(data.url);
+            };
+ 
+            var funcaoFalha = function(data) {
+                alert('Falha\n' + JSON.stringify(data));
+            };
+ 
+            pagarBoleto = function() {
+                var settings = {
+                    "Forma": "BoletoBancario"
+                }
+                MoipWidget(settings);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="MoipWidget"
+             data-token="Z2T0T1M2C0T7G2O3U1V4M2J7A533D859E1J090R0M0Z070T028O5U7U828D5"
+             callback-method-success="funcaoSucesso"
+             callback-method-error="funcaoFalha"></div>
+        <button id="pagarBoleto" onclick="pagarBoleto()"> Imprimir Boleto </button>
+    </body>
+    <script type='text/javascript' src='https://desenvolvedor.moip.com.br/sandbox/transparente/MoipWidget-v2.js' charset=ISO-8859-1"></script>
+</html>

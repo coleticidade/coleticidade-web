@@ -10,7 +10,7 @@
 <link href="assets/css/coleticidade-style.css" rel="stylesheet" media="screen">
 <!-- MAPS -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script> 
   $(function(){
     // <usar variavel futura que registra status do usuário>
@@ -25,6 +25,7 @@
   });
 </script> 
 <script src="https://pagar.me/assets/pagarme-v2.min.js"></script>
+<script src="assets/js/project.js"></script>
 </head>
 
 <body>
@@ -144,7 +145,6 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
           </div> <!-- modal fade -->
 
           <div class="col-lg-7 col-md-7 col-xs-7 col-sm-7" style="display:none" id="info-pagamento" class="modal-body">
-                <form role="form" action="https://seusite.com.br/transactions/new" method="POST" >
                   <div class="form-group">
                     <label for="#" style="color:#333">Nome</label>
                     <input type="name" class="form-control" id="name" placeholder="Digite o nome">
@@ -271,8 +271,9 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
                     </div>
 
                   </div>
-                  <button type="submit" class="btn btn-success btn-coletividade pull-right">PAGAR</button>
-                </form>
+
+
+                  <button type="submit" id="payment_button" onl class="btn btn-success btn-coletividade pull-right">PAGAR</button>
         </div>
           
           <!-------------------------------------------  INFOS DO PROJETO -------------------------------------------->

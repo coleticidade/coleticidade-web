@@ -24,6 +24,7 @@
     $("#footer").load("footer.html");
   });
 </script> 
+<script src="https://pagar.me/assets/pagarme-v2.min.js"></script>
 </head>
 
 <body>
@@ -143,7 +144,7 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
           </div> <!-- modal fade -->
 
           <div class="col-lg-7 col-md-7 col-xs-7 col-sm-7" style="display:none" id="info-pagamento" class="modal-body">
-                <form role="form" action="http://coleticidade.org/localxp/rs/pagar">
+                <form role="form" action="https://seusite.com.br/transactions/new" method="POST" >
                   <div class="form-group">
                     <label for="#" style="color:#333">Nome</label>
                     <input type="name" class="form-control" id="name" placeholder="Digite o nome">
@@ -187,13 +188,13 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
                      <div class="col-lg-4">
                       <div class="form-group">
                         <label for="#" style="color:#333">Logradouro</label>
-                        <input type="born" class="form-control" id="born" placeholder="Logradouro">
+                        <input type="street" class="form-control" id="street" placeholder="Logradouro">
                       </div>
                     </div>
                      <div class="col-lg-4">
                       <div class="form-group">
                         <label for="#" style="color:#333">Numero</label>
-                        <input type="born" class="form-control" id="born" placeholder="Número">
+                        <input type="number" class="form-control" id="number" placeholder="Número">
                       </div>
                     </div>
                   </div>
@@ -202,13 +203,13 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
                      <div class="col-lg-4">
                       <div class="form-group">
                         <label for="#" style="color:#333">Complemento</label>
-                        <input type="born" class="form-control" id="born" placeholder="Complemento">
+                        <input type="complement" class="form-control" id="complement" placeholder="Complemento">
                       </div>
                     </div>
                      <div class="col-lg-4">
                       <div class="form-group">
                         <label for="#" style="color:#333">Bairro</label>
-                        <input type="born" class="form-control" id="born" placeholder="dd/mm/aaaa">
+                        <input type="neighbourhood" class="form-control" id="neighbourhood" placeholder="Bairro">
                       </div>
                     </div>
                   </div>
@@ -217,20 +218,62 @@ está ajudando o <span class="text-bold">Parque na Alameda Lorena</span> acontec
                     <label for="#" style="color:#333">Forma de Pagamento</label>
                     <br>
                     <label class="radio-inline" style="color:#333">
-                      <input type="radio" name="inlineRadioOptions" id="debito" value="debito" style="color:#333">
+                      <input type="radio" name="inlineRadioOptions" id="debit" value="debit" style="color:#333" 
+                      onClick="$('#card_data_form').hide();">
                       Débito </label>
                     <label class="radio-inline" style="color:#333">
-                      <input type="radio" name="inlineRadioOptions" id="credito" value="credito" style="color:#333">
+                      <input type="radio" name="inlineRadioOptions" id="credit" value="credit" style="color:#333"
+                      onClick="$('#card_data_form').show();">
                       Crédito </label>
                     <label class="radio-inline" style="color:#333">
-                      <input type="radio" name="inlineRadioOptions" id="boleto" value="boleto" style="color:#333">
+                      <input type="radio" name="inlineRadioOptions" id="barcode" value="barcode" style="color:#333"
+                      onClick="$('#card_data_form').hide();">
                       Boleto </label>
                   </div>
 
 
+                  <div id="card_data_form" style="display:none">
+                    
+                    <div class="row">
+                       <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="#" style="color:#333">Número do Cartão</label>
+                          <input type="text" class="form-control" id="card_number" placeholder="0000 0000 0000 0000">
+                        </div>
+                      </div>
+                       <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="#" style="color:#333">Nome (como escrito no cartão)</label>
+                          <input type="text" class="form-control" id="card_holder_name" placeholder="Ex. JOSE S SILVA">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                       <div class="col-lg-2">
+                        <div class="form-group">
+                          <label for="#" style="color:#333">Mês de expiração</label>
+                          <input type="born" class="form-control" id="card_expiration_month" placeholder="01">
+                        </div>
+                      </div>
+                       <div class="col-lg-2">
+                        <div class="form-group">
+                          <label for="#" style="color:#333">Ano de expiração</label>
+                          <input type="text" class="form-control" id="card_expiration_year" placeholder="2015">
+                        </div>
+                      </div>
+                       <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="#" style="color:#333">Código de Segurança</label>
+                          <input type="text" class="form-control" id="card_cvv" placeholder="000">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                   <button type="submit" class="btn btn-success btn-coletividade pull-right">PAGAR</button>
                 </form>
-              </div>
+        </div>
           
           <!-------------------------------------------  INFOS DO PROJETO -------------------------------------------->
           

@@ -5,11 +5,12 @@ $(document).ready(function() { // quando o jQuery estiver carregado...
 
     var paymentButton = $("#payment_button");
 
-    function pay() { // quando o form for enviado...
+    
+});
+
+function pay() { // quando o form for enviado...
         // inicializa um objeto de cartão de crédito e completa
         // com os dados do form
-        alert('Funfou o js!');
-        console.log('funfou!');
         var creditCard = new PagarMe.creditCard();
         creditCard.cardHolderName = $("#payment_form #card_holder_name").val();
         creditCard.cardExpirationMonth = $("#payment_form #card_expiration_month").val();
@@ -26,7 +27,7 @@ $(document).ready(function() { // quando o jQuery estiver carregado...
 
         if(hasErrors) {
             // realiza o tratamento de errors
-            alert(fieldErrors);
+            console.log(fieldErrors);
         } else {
             // se não há erros, gera o card_hash...
             creditCard.generateHash(function(cardHash) {
@@ -39,4 +40,3 @@ $(document).ready(function() { // quando o jQuery estiver carregado...
 
         return false;
     }
-});

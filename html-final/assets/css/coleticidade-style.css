@@ -115,6 +115,7 @@ a {cursor:pointer;}
 	/*.dropdown-login span {padding-top:13px;}*/
 	.form-group h3 {margin-top:0; margin-bottom:25px;}
 	.btn-facebook {background-color:#3b5998; color:#fff; width:100%; text-align:center; padding:10px 0;}
+	.btn-entrar {background-color:#33cc99; color:#fff; width:100%; text-align:center; padding:10px 0;}
 	.btn-facebook:hover {color:#fff; background-color:#2d4881;}
 	.form-email {margin-bottom:15px;}
 	.btn-sigin {padding:13px 15px;}
